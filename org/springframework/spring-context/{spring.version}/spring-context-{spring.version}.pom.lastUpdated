@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Jan 30 11:14:54 CST 2015
+http\://repo.maven.apache.org/maven2/.error=Could not transfer artifact org.springframework\:spring-context\:pom\:{spring.version} from/to central (http\://repo.maven.apache.org/maven2)\: Illegal character in path at index 71\: http\://repo.maven.apache.org/maven2/org/springframework/spring-context/{spring.version}/spring-context-{spring.version}.pom
+0e457066c91fff7265565a4b26662058120af9dd@proxy.sin.sap.corp\:8080>@default-http\://repo.maven.apache.org/maven2/.lastUpdated=1422587694150
