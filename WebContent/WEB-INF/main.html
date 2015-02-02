@@ -2,17 +2,151 @@
 <html>
 
 <head>
-<script src="assets\js\angular.js"></script>
+<!-- Load BootStrap  -->
+<!-- <link rel="stylesheet" type="text/css"
+	href="assets/css/bootmetro/bootmetro.css">
+<link rel="stylesheet" type="text/css"
+	href="assets/css/bootmetro/bootmetro-responsive.css">
+<link rel="stylesheet" type="text/css"
+	href="assets/css/bootmetro/bootmetro-icons.css">
+<link rel="stylesheet" type="text/css"
+	href="assets/css/bootmetro/bootmetro-ui-light.css">
+<link rel="stylesheet" type="text/css"
+	href="assets/css/bootmetro/datepicker.css"> -->
+<link rel="stylesheet" type="text/css"
+	href="assets/css/bootstrap/bootstrap.css">
+<link rel="stylesheet" type="text/css"
+	href="assets/css/bootstrap/bootstrap-theme.css">
+
+
+<!--Load Metro UI CSS  -->
+<link rel="stylesheet" type="text/css"
+	href="assets/css/metro-bootstrap.min.css">
+<link rel="stylesheet" type="text/css"
+	href="assets/css/metro-bootstrap-responsive.css">
+<link rel="stylesheet" type="text/css"
+	href="assets/css/jquery.gridster.min.css">
+
+<!--Load global css  -->
+<link rel="stylesheet" type="text/css" href="assets/css/demo.css">
+<link rel="stylesheet" type="text/css" href="assets/css/iconFont.css">
+
+<!-- This page css -->
+<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 
-<body>
-
-	<div ng-app="">
-		<p>
-			Name: <input type="text" ng-model="name">
-		</p>
-		<p ng-bind="name"></p>
+<body class="metro">
+	<div id="header"></div>
+	<!-- <div class="main">
+		<div class="metro panorama">
+			<div class="panorama-sections">
+				 <div class="panorama-section">
+				 	<h2>Featured pictures</h2>
+				 	<div class="gridster">
+						<ul>
+							<li data-row="1" data-col="1" data-sizex="3" data-sizey="2">0</li>
+							<li data-row="1" data-col="3" data-sizex="1" data-sizey="2">1</li>
+							<li data-row="1" data-col="4" data-sizex="1" data-sizey="1">2</li>
+							<li data-row="3" data-col="2" data-sizex="3" data-sizey="4">3</li>
+						</ul>
+					</div>
+				 </div>
+				 <div class="panorama-section">
+				 	<h2>Featured pictures2</h2>
+				 	<div class="gridster">
+						<ul>
+							<li data-row="1" data-col="1" data-sizex="3" data-sizey="2">0</li>
+							<li data-row="1" data-col="3" data-sizex="1" data-sizey="2">1</li>
+							<li data-row="1" data-col="4" data-sizex="1" data-sizey="1">2</li>
+							<li data-row="3" data-col="2" data-sizex="3" data-sizey="3">3</li>
+						</ul>
+					</div>
+				 </div>
+				 <div class="panorama-section">
+				 	<h2>Featured pictures3</h2>
+				 	<div class="gridster">
+						<ul>
+							<li data-row="1" data-col="1" data-sizex="3" data-sizey="2">0</li>
+							<li data-row="1" data-col="3" data-sizex="1" data-sizey="2">1</li>
+							<li data-row="1" data-col="4" data-sizex="1" data-sizey="1">2</li>
+							<li data-row="3" data-col="2" data-sizex="3" data-sizey="5">3</li>
+						</ul>
+					</div>
+				 </div>
+			</div>
+		</div>
+	</div> -->
+	<div class="row">
+		<div class="col-md-4">
+			<div class="section">
+				<h2>Section 1</h2>
+				<div class="gridster">
+					<ul>
+						<li data-row="1" data-col="1" data-sizex="3" data-sizey="2">0</li>
+						<li data-row="1" data-col="3" data-sizex="1" data-sizey="2">1</li>
+						<li data-row="1" data-col="4" data-sizex="1" data-sizey="1">2</li>
+						<li data-row="3" data-col="2" data-sizex="3" data-sizey="4">3</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="section">
+				<h2>Section 2</h2>
+				<div class="gridster">
+					<ul>
+						<li data-row="1" data-col="1" data-sizex="3" data-sizey="2">0</li>
+						<li data-row="1" data-col="3" data-sizex="1" data-sizey="2">1</li>
+						<li data-row="1" data-col="4" data-sizex="1" data-sizey="1">2</li>
+						<li data-row="3" data-col="2" data-sizex="3" data-sizey="4">3</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="section">
+				<h2>Section 3</h2>
+				<div class="gridster">
+					<ul>
+						<li data-row="1" data-col="1" data-sizex="3" data-sizey="2">0</li>
+						<li data-row="1" data-col="3" data-sizex="1" data-sizey="2">1</li>
+						<li data-row="1" data-col="4" data-sizex="1" data-sizey="1">2</li>
+						<li data-row="3" data-col="2" data-sizex="3" data-sizey="4">3</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</div>
 
 </body>
+
+
+<script src="assets/js/jquery/jquery.min.js"></script>
+<script type="text/javascript">
+	$("#header").load("app/shared/header.html");
+</script>
+<script src="assets/js/jquery/jquery.widget.min.js"></script>
+<script src="assets/js/jquery/jquery.mousewheel.js"></script>
+<script src="assets/js/bootstrap/bootstrap.js"></script>
+<script src="assets/js/angular.js"></script>
+<script src="assets/js/metro/metro.min.js"></script>
+<script src="assets/js/gridster/jquery.gridster.js"
+	type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	var gridster;
+	$(function() {
+		var log = document.getElementById('log');
+
+		gridster = $(".gridster ul").gridster({
+			widget_base_dimensions : [ 100, 55 ],
+			widget_margins : [ 5, 5 ],
+			autogrow_cols : true,
+			resize : {
+				enabled : true
+			}
+		}).data('gridster');
+
+	});
+</script>
+
 </html>
