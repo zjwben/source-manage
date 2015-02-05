@@ -1,15 +1,37 @@
 <!DOCTYPE html>
-<html ng-app="display">
+<html ng-app="app.display">
 <head>
 <meta charset="utf-8">
+<link rel="stylesheet" type="text/css"
+	href="../../assets/css/metro-bootstrap.min.css">
+<link rel="stylesheet" type="text/css"
+	href="../../assets/css/metro-bootstrap-responsive.css">
+<link rel="stylesheet" type="text/css"
+	href="../../assets/css/iconFont.css">
+
+<!--Load global css  -->
+<link rel="stylesheet" type="text/css" href="../../assets/css/demo.css">
+<link rel="stylesheet" type="text/css"
+	href="../../assets/css/iconFont.css">
+
 <title>Insert title here</title>
 </head>
-<body ng-controller="displayController">
-	
+<body class="metro">
+	<div id="header"></div>
+	<div class="grid fluid" ng-controller="displayController" style="padding: 30px">
+		<ul ng-repeat="user in users">
+			<li>{{user}}</li>
+		</ul>
+	</div>
 </body>
-<script src="../../../assets/js/jquery/jquery.min.js"></script>
-<script src="../../../assets/js/angular.js"></script>
+<script src="../../assets/js/jquery/jquery.min.js"></script>
+<script type="text/javascript">
+	$("#header").load("../../app/shared/header.html");
+</script>
+<script src="../../assets/js/jquery/jquery.widget.min.js"></script>
+<script src="../../assets/js/jquery/jquery.mousewheel.js"></script>
+<script src="../../assets/js/angular.js"></script>
+<script src="../../assets/js/metro/metro.min.js"></script>
 <script src="displayController.js"></script>
 <script src="displayService.js"></script>
-
 </html>

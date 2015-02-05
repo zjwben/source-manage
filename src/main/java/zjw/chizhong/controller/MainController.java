@@ -13,4 +13,5 @@ public class MainController {
 	public ModelAndView test(){
 		return new ModelAndView("index");
 	}
+	
 }

@@ -2,8 +2,8 @@
  * 
  */
 
-var app = angular.module('display', []);
+var app = angular.module('app.display',[]);
 
-app.controller('displayController',function($scope){
-	
+app.controller('displayController',function($scope,userService){
+	$scope.users = userService.all();
 });
