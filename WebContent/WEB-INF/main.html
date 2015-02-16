@@ -1,24 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 
 <head>
-<!-- Load BootStrap  -->
-<!-- <link rel="stylesheet" type="text/css"
-	href="assets/css/bootmetro/bootmetro.css">
-<link rel="stylesheet" type="text/css"
-	href="assets/css/bootmetro/bootmetro-responsive.css">
-<link rel="stylesheet" type="text/css"
-	href="assets/css/bootmetro/bootmetro-icons.css">
-<link rel="stylesheet" type="text/css"
-	href="assets/css/bootmetro/bootmetro-ui-light.css">
-<link rel="stylesheet" type="text/css"
-	href="assets/css/bootmetro/datepicker.css"> -->
-<link rel="stylesheet" type="text/css"
-	href="assets/css/bootstrap/bootstrap.css">
-<link rel="stylesheet" type="text/css"
-	href="assets/css/bootstrap/bootstrap-theme.css">
-
-
 <!--Load Metro UI CSS  -->
 <link rel="stylesheet" type="text/css"
 	href="assets/css/metro-bootstrap.min.css">
@@ -36,99 +19,50 @@
 </head>
 
 <body class="metro">
-	<div id="header"></div>
-	<!-- <div class="main">
-		<div class="metro panorama">
-			<div class="panorama-sections">
-				 <div class="panorama-section">
-				 	<h2>Featured pictures</h2>
-				 	<div class="gridster">
-						<ul>
-							<li data-row="1" data-col="1" data-sizex="3" data-sizey="2">0</li>
-							<li data-row="1" data-col="3" data-sizex="1" data-sizey="2">1</li>
-							<li data-row="1" data-col="4" data-sizex="1" data-sizey="1">2</li>
-							<li data-row="3" data-col="2" data-sizex="3" data-sizey="4">3</li>
-						</ul>
-					</div>
-				 </div>
-				 <div class="panorama-section">
-				 	<h2>Featured pictures2</h2>
-				 	<div class="gridster">
-						<ul>
-							<li data-row="1" data-col="1" data-sizex="3" data-sizey="2">0</li>
-							<li data-row="1" data-col="3" data-sizex="1" data-sizey="2">1</li>
-							<li data-row="1" data-col="4" data-sizex="1" data-sizey="1">2</li>
-							<li data-row="3" data-col="2" data-sizex="3" data-sizey="3">3</li>
-						</ul>
-					</div>
-				 </div>
-				 <div class="panorama-section">
-				 	<h2>Featured pictures3</h2>
-				 	<div class="gridster">
-						<ul>
-							<li data-row="1" data-col="1" data-sizex="3" data-sizey="2">0</li>
-							<li data-row="1" data-col="3" data-sizex="1" data-sizey="2">1</li>
-							<li data-row="1" data-col="4" data-sizex="1" data-sizey="1">2</li>
-							<li data-row="3" data-col="2" data-sizex="3" data-sizey="5">3</li>
-						</ul>
-					</div>
-				 </div>
-			</div>
-		</div>
-	</div> -->
-	<div class="row">
-		<div class="col-md-4">
-			<div class="section">
+	<header></header>
+	<div class="grid fluid">
+		<div class="row">
+			<div class="span4 section">
 				<h2>Section 1</h2>
-				<div class="gridster">
-					<ul>
-						<li data-row="1" data-col="1" data-sizex="3" data-sizey="2">0</li>
-						<li data-row="1" data-col="3" data-sizex="1" data-sizey="2">1</li>
-						<li data-row="1" data-col="4" data-sizex="1" data-sizey="1">2</li>
-						<li data-row="3" data-col="2" data-sizex="3" data-sizey="4">3</li>
-					</ul>
+				<div id="section_1" class="gridster">
+					<div class="draggable" data-row="1" data-col="1" data-sizex="3" data-sizey="2">0</div>
+					<div class="draggable" data-row="1" data-col="3" data-sizex="1" data-sizey="2">1</div>
+					<div class="draggable" data-row="1" data-col="4" data-sizex="1" data-sizey="1">2</div>
+					<div class="draggable" data-row="3" data-col="2" data-sizex="3" data-sizey="4">3</div>
 				</div>
 			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="section">
+			<div class="span4 section">
 				<h2>Section 2</h2>
-				<div class="gridster">
-					<ul>
-						<li data-row="1" data-col="1" data-sizex="3" data-sizey="2">0</li>
-						<li data-row="1" data-col="3" data-sizex="1" data-sizey="2">1</li>
-						<li data-row="1" data-col="4" data-sizex="1" data-sizey="1">2</li>
-						<li data-row="3" data-col="2" data-sizex="3" data-sizey="4">3</li>
-					</ul>
+				<div id="section_2" class="gridster">
+					<div class="draggable" data-row="1" data-col="1" data-sizex="3" data-sizey="2">0</div>
+					<div class="draggable" data-row="1" data-col="3" data-sizex="1" data-sizey="2">1</div>
+					<div class="draggable" data-row="1" data-col="4" data-sizex="1" data-sizey="1">2</div>
+					<div class="draggable" data-row="3" data-col="2" data-sizex="3" data-sizey="4">3</div>
 				</div>
 			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="section">
+			<div class="span4 section">
 				<h2>Section 3</h2>
-				<div class="gridster">
-					<ul>
-						<li data-row="1" data-col="1" data-sizex="3" data-sizey="2">0</li>
-						<li data-row="1" data-col="3" data-sizex="1" data-sizey="2">1</li>
-						<li data-row="1" data-col="4" data-sizex="1" data-sizey="1">2</li>
-						<li data-row="3" data-col="2" data-sizex="3" data-sizey="4">3</li>
-					</ul>
+				<div id="section_3" class="gridster">
+					<div class="draggable bg-darkPink" data-click="transform" data-row="1" data-col="1" data-sizex="2" data-sizey="1">0</div>
+					<div class="draggable bg-cyan" data-click="transform" data-row="1" data-col="3" data-sizex="1" data-sizey="1">1</div>
+					<div class="draggable" data-click="transform" data-row="1" data-col="4" data-sizex="1" data-sizey="1"><a href="page/display/display.html"><img src="assets/img/excel2013icon.png"></a></div>
+					<div class="draggable" data-click="transform" data-row="3" data-col="2" data-sizex="3" data-sizey="2">3</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
 </body>
 
 
 <script src="assets/js/jquery/jquery.min.js"></script>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 	$("#header").load("app/shared/header.html");
-</script>
+</script> -->
 <script src="assets/js/jquery/jquery.widget.min.js"></script>
 <script src="assets/js/jquery/jquery.mousewheel.js"></script>
-<script src="assets/js/bootstrap/bootstrap.js"></script>
+<!-- <script src="assets/js/bootstrap/bootstrap.js"></script> -->
 <script src="assets/js/angular.js"></script>
+<script src="app/app.module.js"></script>
 <script src="assets/js/metro/metro.min.js"></script>
 <script src="assets/js/gridster/jquery.gridster.js"
 	type="text/javascript" charset="utf-8"></script>
@@ -136,14 +70,12 @@
 	var gridster;
 	$(function() {
 		var log = document.getElementById('log');
-
-		gridster = $(".gridster ul").gridster({
-			widget_base_dimensions : [ 100, 55 ],
-			widget_margins : [ 5, 5 ],
-			autogrow_cols : true,
-			resize : {
-				enabled : true
-			}
+	
+		gridster = $(".gridster").gridster({
+			widget_base_dimensions : [ 100, 100 ],
+			widget_selector: '.draggable',
+			widget_margins : [ 5, 5]
+			
 		}).data('gridster');
 
 	});

@@ -17,7 +17,10 @@
 	<mvc:resources location="WEB-INF/assets/css/" mapping="/assets/css/**"></mvc:resources>
  	<mvc:resources location="WEB-INF/assets/js/" mapping="/assets/js/**"></mvc:resources>
  	<mvc:resources location="WEB-INF/assets/img/" mapping="/assets/img/**"></mvc:resources>
+ 	<mvc:resources location="WEB-INF/app/components/" mapping="/page/**"></mvc:resources>
+ 	
  	<mvc:resources location="WEB-INF/" mapping="/**"></mvc:resources>
+ 	
  	
  	<bean id="viewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
     	<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
